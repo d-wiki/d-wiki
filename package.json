@@ -13,7 +13,8 @@
     "solium:lint": "solium lint -d ./contracts",
     "compile:polygon": "truffle compile --config=truffle-config.polygon.js",
     "precommit": "truffle compile && npm run solium:lint:fix",
-    "migrate:polygon": "truffle migrate --config=truffle-config.polygon.js --network=$npm_config_network"
+    "migrate:polygon": "truffle migrate --config=truffle-config.polygon.js --network=$npm_config_network",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
